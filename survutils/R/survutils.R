@@ -6,8 +6,8 @@
 #' @param qr Norm on the row. When 1 it is L_1 norm and when 2 it is L_2 norm. This value should be kept <=2 for reducing computational cost. Used only in type "TREC"
 #' @param qc Norm on the column. When 1 it is L_1 norm and when 2 it is L_2 norm. This value should be kept <=2 for reducing computational cost. Used only in type "TREC"
 #' @param tol Convergence tolerance. Default value is 1e-3. Used only in type "TREC"
-#' @param ntrees Number of trees fot GBM model. Default is 1000.
-#' @param nfolds Number of folds for GBM cross validation. Default is 5
+#' @param ntrees Number of trees fot BOOSTCI model. Default is 1000.
+#' @param nfolds Number of folds for BOOSTCI cross validation. Default is 5
 #' @export
 
 survutils <- function(filename, type, rhor=1,rhoc=1, qr=2, qc=2, tol = 1e-03, ntrees=1000, nfolds=5)
