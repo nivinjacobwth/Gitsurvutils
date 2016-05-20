@@ -17,6 +17,7 @@ Depends:
     Formula,
     lattice,
     Hmisc,
-    rms
+    rms,
+    gbm
 License: GPL
 RoxygenNote: 5.0.1

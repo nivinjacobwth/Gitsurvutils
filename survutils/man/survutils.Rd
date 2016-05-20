@@ -5,12 +5,12 @@
 \title{Predict on survival data}
 \usage{
 survutils(filename, type, rhor = 1, rhoc = 1, qr = 2, qc = 2,
-  tol = 0.001)
+  tol = 0.001, ntrees = 1000, nfolds = 5)
 }
 \arguments{
 \item{filename}{Path to survival data file. Data should have the features in the format (time, status and other feature columns)}
 
-\item{type}{Type of function to be applied. Values are {"RSF", "SUPERPC", "TREC", "REC"}}
+\item{type}{Type of function to be applied. Values are {"RSF", "SUPERPC", "GBM" "TREC", "REC"}}
 
 \item{rhor}{Row regularization parameter. Default value is 1. Used only in type "TREC"}
 
@@ -21,6 +21,10 @@ survutils(filename, type, rhor = 1, rhoc = 1, qr = 2, qc = 2,
 \item{qc}{Norm on the column. When 1 it is L_1 norm and when 2 it is L_2 norm. This value should be kept <=2 for reducing computational cost. Used only in type "TREC"}
 
 \item{tol}{Convergence tolerance. Default value is 1e-3. Used only in type "TREC"}
+
+\item{ntrees}{Number of trees fot GBM model. Default is 1000.}
+
+\item{nfolds}{Number of folds for GBM cross validation. Default is 5}
 }
 \description{
 Predict on survival data
