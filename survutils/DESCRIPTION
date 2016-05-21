@@ -18,6 +18,7 @@ Depends:
     lattice,
     Hmisc,
     rms,
-    gbm
+    gbm,
+	RegCox
 License: GPL
 RoxygenNote: 5.0.1
