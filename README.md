@@ -7,8 +7,8 @@ Package can be installed by
 
 library(devtools)
 
-install_github("nivinjacobwth/GitRegCox/regcox")  #dependency package RegCox
+install_github("nivinjacobwth/RegCox/RegCox")  #dependency package RegCox
 
-install_github("nivinjacobwth/Gitsurvutils/survutils")
+install_github("nivinjacobwth/survutils/survutils")
 
 
